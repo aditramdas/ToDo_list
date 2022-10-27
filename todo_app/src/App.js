@@ -25,8 +25,7 @@ function App() {
         return (<div className="todo">
           <div className="left">
             <input onChange={(e)=>{
-              console.log(e.target.checked) 
-              console.log(obj) 
+              console.log(e.target.checked)  
               setToDos(toDos.filter(obj2=>{
                 if(obj2.id==obj.id)
                   obj2.status=e.target.checked
